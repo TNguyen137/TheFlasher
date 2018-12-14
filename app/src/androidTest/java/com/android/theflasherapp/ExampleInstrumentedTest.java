@@ -1,4 +1,4 @@
-package com.theflasherapp.www.theflasherapp.main;
+package com.android.theflasherapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.theflasherapp.www.theflasherapp.main.test", appContext.getPackageName());
+        assertEquals("com.android.theflasherapp", appContext.getPackageName());
     }
 }
