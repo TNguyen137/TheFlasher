@@ -1,4 +1,4 @@
-package com.theflasherapp.www.theflasherapp.main;
+package com.android.theflasherapp;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
