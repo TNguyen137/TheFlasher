@@ -9,7 +9,7 @@ You must have a Pull Request reviewed, approved, and (tested?) prior to merging.
 Taken from Wikipedia (https://en.wikipedia.org/wiki/Naming_convention_(programming)):
 In Java, naming conventions for identifiers have been established and suggested by various Java communities such as Sun Microsystems,[17] Netscape,[18] AmbySoft,[19] etc. A sample of naming conventions set by Sun Microsystems are listed below, where a name in "CamelCase" is one composed of a number of words joined without spaces, with each word's initial letter in capitals — for example "CamelCase".
 
-Identifier types
+Identifier Types  
 Classes	- Class names should be nouns in UpperCamelCase, with the first letter of every word capitalised. Use whole words — avoid acronyms and abbreviations (unless the abbreviation is much more widely used than the long form, such as URL or HTML)  
     class Raster {}  
     class ImageSprite {}  
