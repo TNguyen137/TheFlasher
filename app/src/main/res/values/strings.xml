@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">TheFlasherApp</string>
     <string name="title_activity_maps">Map</string>
+    <string name="button_light_switch">Light Switch</string>
+    <string name="dialogue_message">Device does not have flash</string>
+    <string name="dialog_message">Device does not have flash</string>
+    <string name="dialog_title">ERROR</string>
+    <string name="ok">OK</string>
+    <string name="camera_enabled">Camera Enabled</string>
 </resources>

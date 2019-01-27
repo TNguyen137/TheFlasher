@@ -9,11 +9,9 @@
     -->
     <uses-feature android:name="android.hardware.camera" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    //permission to turn on camera
-    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.hardware.camera.autofocus" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
-
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -40,16 +38,17 @@
             android:label="@string/title_activity_maps">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".Flashlight">
+        <activity android:name=".FlashlightActivity"
+            android:label = "Flashlight Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
