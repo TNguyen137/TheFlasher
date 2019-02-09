@@ -16,6 +16,8 @@ import com.android.theflasherapp.restservice.RestTask;
 
 import org.springframework.http.HttpMethod;
 
+import java.util.Random;
+
 public class UserInfoActivity extends AppCompatActivity {
 
     RestTask restTask = new RestTask(new IRestTask() {
@@ -65,7 +67,7 @@ public class UserInfoActivity extends AppCompatActivity {
             return true;
         } else if (id == R.id.action_add) {
             UserInfo userInfo = CreateNewRandomUser();
-            Pair <Integer, HttpMethod> pair = new Pair<> (userInfo.getId(), HttpMethod.POST);
+            Pair <UserInfo, HttpMethod> pair = new Pair<> (userInfo, HttpMethod.POST);
             new RestTask(new IRestTask() {
                 @Override
                 public void processFinish(UserInfo userInfo) {
@@ -106,8 +108,11 @@ public class UserInfoActivity extends AppCompatActivity {
     }
 
     public UserInfo CreateNewRandomUser() {
-        int userId = (int)Math.random() * 1000;
-        UserInfo user = new UserInfo(userId, "Atl", "T", "N", "4354354", "TK@TK.TK");
+        Random random = new Random();
+        int num  = random.nextInt(100);
+        int userId = num;
+        UserInfo user = new UserInfo(userId, "Atl" + userId, "T" + userId,
+                "N" + userId, "4354354" + userId, "TK@TK.TK" + userId);
         return user;
     }
 }
