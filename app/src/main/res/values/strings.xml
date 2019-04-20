@@ -16,4 +16,8 @@
     <string name="action_refresh">Refresh</string>
     <string name="action_add">Add</string>
     <string name="base_uri">https://hj07rv3r9k.execute-api.us-east-2.amazonaws.com/test</string>
+    <string name="normal_map">Normal Map</string>
+    <string name="hybrid_map">Hybrid Map</string>
+    <string name="satellite_map">Satellite Map</string>
+    <string name="terrain_map">Terrain Map</string>
 </resources>
