@@ -92,11 +92,11 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     /**
      * Method to start map service
      */
-    private void startMapGPSService(Context context) {
+    private void startMapGPSService(Context context)
+    {
         Intent service = new Intent(context, MapsGPS.class);
         startService(service);
     }
-
     /**
      * Method to add a menu to select map type
      */
